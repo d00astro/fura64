@@ -1,7 +1,7 @@
 # fura64
 Random stuff for the original 2016 Pine64 A65, with LCD. 
 I've tried many times to make something useful with this thing but I alway struggle to finde the resources I need, so I decided to collect them here as I need them.
-I never had much luck with the GPIOs on this thing, so I think I won't even bother with that. 
+I never had much luck with the GPIOs on this thing (using Python at least), so I think I won't even bother with that. 
 
 ![A64 Board](pine64.png)
 
@@ -38,6 +38,26 @@ Then add to `~/.bashrc`:
 export PATH=$HOME/.local/bin/:$PATH
 ```
 
+## Python GPIO control
+I don't think this ever worked completely for me, but still.
+
+Somewhere, e.g. in `~/Downloads/`:
+```
+git clone https://github.com/swkim01/RPi.GPIO-PineA64.git
+cd RPi.GPIO-PineA64
+sudo python setup.py install
+sudo chmod -R $USER:$USER ./
+```
+
+Then add to `~/.bashrc`:
+```
+export PYTHONPATH=$HOME/Downloads/RPi.GPIO-PineA64/:$PYTHONPATH
+```
+Adjust for installation dir, if not `Downloads`.
+
+I had various issues with this, most lately that importing `RPi.GPIO` gives an error that it's unable to find `RPi._GPIO` which I believe is the actual C-bindings. 
+Somwhere I read that removing the underscore '_' from the file `RPi/GPIO/__init__.py`, i.e. changing the line `from RPi._GPIO import *` to `from RPi.GPIO import *`, would resolve this.
+This seems like an odd fix to me, and while it indeed removed the error, it didn't seem to actually import the module... which is maybe not that surprising, given the 'fix' :)
 
 
 

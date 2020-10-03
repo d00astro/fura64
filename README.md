@@ -1,12 +1,10 @@
 # fura64
 Random stuff for the original 2016 Pine64 A65, with LCD. 
-I've tried many times to make something useful with this thing but I alway struggle to finde the resources I need, so I decided to collect them here as I need them.
-I never had much luck with the GPIOs on this thing (using Python at least), so I think I won't even bother with that. 
+I've tried many times to make something useful with this thing but I alway struggle to find the resources I need, so I decided to collect my findings here, as I go along.
 
 ![A64 Board](pine64.png)
 
-
-I might, however, turn this ino something more specific if I find a use case that works well for this device. 
+I might, however, turn this ino something more specific if I find a use case that works well for this device. I planned to use this for my ["Smart Doorbell"](https://github.com/d00astro/pintu) project, but I didn't have much luck with the GPIOs on this thing (using Python at least), so I think I won't even bother with that, and just use a normal Raspberry Pi instead.
 
 ## Armbian Version
 The Pine64 A64(+) LCD does not seem to work with any Linux (pine?) kernels newer than 3.10 so I recommend using [`Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop`](https://archive.armbian.com/pine64/archive/Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop.7z )

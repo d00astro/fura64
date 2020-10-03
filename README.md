@@ -4,7 +4,13 @@ I've tried many times to make something useful with this thing but I alway strug
 
 ![A64 Board](pine64.png)
 
-I might, however, turn this ino something more specific if I find a use case that works well for this device. I planned to use this for my ["Smart Doorbell"](https://github.com/d00astro/pintu) project, but I didn't have much luck with the GPIOs on this thing (using Python at least), so I think I won't even bother with that, and just use a normal Raspberry Pi instead.
+I might, however, turn this into something more specific, if I ever find a use case that works well for this device. 
+
+I most recently planned to use this for my ["Smart Doorbell"](https://github.com/d00astro/pintu) project, but I didn't have much luck with the GPIOs on this thing (using Python at least), so I think I won't even bother with that, and just use a normal Raspberry Pi instead.
+
+Other potential ideas:
+- A system monitor that shows live status of servers and services
+- If I get GPIO to work: KVM control
 
 ## Armbian Version
 The Pine64 A64(+) LCD does not seem to work with any Linux (pine?) kernels newer than 3.10 so I recommend using [`Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop`](https://archive.armbian.com/pine64/archive/Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop.7z )

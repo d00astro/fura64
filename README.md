@@ -12,6 +12,8 @@ Other potential ideas:
 - A system monitor that shows live status of servers and services
 - If I get GPIO to work: KVM control
 
+Also, its definitely worth checking out posts #6 and #7 of [this forum thread](http://forum.pine64.org/showthread.php?tid=2896&pid=68821#pid68821).
+
 ## Armbian Version
 The Pine64 A64(+) LCD does not seem to work with any Linux (pine?) kernels newer than 3.10 so I recommend using [`Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop`](https://archive.armbian.com/pine64/archive/Armbian_5.90_Pine64_Ubuntu_xenial_default_3.10.107_desktop.7z )
 
